@@ -1,27 +1,36 @@
-# 📊 Marketing Campaign Performance & ROAS Optimization
+# 📊 End-to-End Marketing Campaign & ROAS Analytics
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![SQL](https://img.shields.io/badge/SQL-BigQuery-orange)
-![Looker Studio](https://img.shields.io/badge/LookerStudio-Dashboard-yellow)
-
-## 📌 Project Overview
-Analyzed 1,000 multi-channel marketing records to evaluate campaign efficiency, channel ROAS (Return on Ad Spend), and customer acquisition costs across Google Ads, Meta Ads, LinkedIn, Email, and Organic channels.
+An end-to-end data analytics project analyzing **1,000 marketing campaign records** across multiple channels (Google Ads, Meta Ads, LinkedIn, Email, and Organic) to evaluate ROI, Return on Ad Spend (ROAS), and Cost Per Acquisition (CPA).
 
 ---
 
-## 🛠️ Tech Stack
-- **Database Querying:** BigQuery SQL
-- **Data Analytics:** Python (`pandas`, `matplotlib`, `seaborn`) in Google Colab
-- **Visualization:** Looker Studio
+## 🔗 Live Interactive Dashboard
+👉 **[View Executive Looker Studio Dashboard](https://datastudio.google.com/s/lRWjAqSBVVY)**
 
 ---
 
-## 📈 Key Findings
-- **Top Channels:** Email and Organic generated the highest ROAS due to minimal acquisition spend.
-- **Paid Ads Performance:** Google Ads achieved a **10.95x ROAS** with a lower CPA ($266.69) compared to Meta Ads ($320.16) and LinkedIn ($643.89).
-- **Actionable Insight:** Reallocating budget from LinkedIn to Google Ads will optimize overall CPA while driving conversion volume.
+## 🛠️ Tech Stack & Architecture
+* **Data Warehousing & Querying:** BigQuery / SQL (`sql/marketing_metrics.sql`)
+* **Data Processing & EDA:** Python, Pandas, Matplotlib, Seaborn (`notebooks/campaign_analysis.ipynb`)
+* **Data Visualization:** Google Looker Studio
+* **Version Control:** GitHub (`main` branch workflow)
 
 ---
 
-## 📂 Repository Structure
+## 📈 Key Business Insights
 
+* **Top Performing Channel:** **Email** generated the highest ROAS, delivering high conversion volume with minimal acquisition cost.
+* **Paid Channel Efficiency:** Paid channels like Google Ads and Meta Ads showed steady overall revenue growth, though CPA requires optimization for low-converting sub-campaigns.
+* **Device Performance:** Revenue remains heavily skewed toward desktop and mobile platforms, making cross-device targeting a primary focus area.
+
+---
+
+## 📁 Repository Structure
+
+```text
+├── sql/
+│   └── marketing_metrics.sql       # SQL queries for campaign aggregation & KPI metrics
+├── notebooks/
+│   └── campaign_analysis.ipynb     # Python EDA notebook with clean visual plots
+├── marketing_campaign_data.csv     # Raw campaign dataset (1,000 records)
+└── README.md                       # Project overview and dashboard link
